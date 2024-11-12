@@ -1,0 +1,178 @@
+/* 
+#006C68
+#E8D55D
+#8E6920
+#61BA53
+#39D52D */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "cosolas", sans-serif;
+}
+
+.container1 {
+    height: 100vh;
+}
+
+.container2 {
+    height: 100vh;
+}
+
+.welcome-bar {
+    background-color: #006C68;
+    padding: 30px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.section {
+    height: 70vh;
+    display: flex;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 620px;
+}
+
+.info-text {
+    padding: 100px;
+    font-size: 23px;
+    width: 100%;
+}
+
+
+.info-text p {
+    font-size: 27px;
+}
+
+.name {
+    font-size: 32px;
+}
+
+.img {
+    padding: 100px;
+    padding-top: 120px;
+    height: 100vh;
+    display: flex;
+}
+
+.img img {
+    height: 370px;
+    width: 370px;
+    border-radius: 50%;
+    border: 5px solid #006C68;
+}
+
+.title {
+    padding: 50px;
+    padding-left: 200px;
+    font-size: 28px;
+    width: 830px;
+}
+
+
+.slider {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    padding: 50px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.title h1 {
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid #006C68;
+    animation: forwards,
+        type steps(25) 12s infinite;
+}
+
+@keyframes type {
+    0%{width: 0;}
+    50%{width: 100%;}
+}
+
+.container3 {
+    padding: 50px;
+    display: flex;
+    height: 70vh;
+}
+
+.activity-name {
+    padding-left: 50px ;
+}
+
+.left {
+    flex: 1;
+    overflow: hidden;
+}
+
+.left img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+.right {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.right h1 {
+    margin-bottom: 20px;
+}
+
+.right p {
+    font-size: 30px;
+    line-height: 1.6;
+}
+
+.highlight {
+    color: #006C68;
+}
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background-color: #006C68;
+    color: #ffffff;
+}
